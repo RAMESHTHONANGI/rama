@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title style="font-family:Arial, Helvetica, sans-serif">
+
+        Bhoomi Yaatra_travel web
+        </title>
+        <link rel="icon" type="image" href="https://thumbs.dreamstime.com/z/travel-logo-23045342.jpg">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=display-width initial-scale:1">
+        <script src="https://kit.fontawesome.com/9c5911662e.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+
+            html{
+                scroll-behavior: smooth;
+            }
+
+            body{
+                padding:0px;
+                margin:0px;
+                box-sizing:border-box;
+            }
+
+            nav{
+                background-color:rgba(0, 0, 0, 0.959);
+                height:50px;
+                width:100%;
+                border:1px solid black;
+                padding-top:25px;
+                position:fixed;
+            }
+            nav a{
+                text-decoration:none;
+                color:white;
+                margin:15px;
+                letter-spacing:0.4px;
+                font-size:14px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                FONT-WEIGHT:300;
+                
+
+            }
+
+            nav h3{
+                color:white;
+                margin-top:-35px;
+                margin-left:20px;
+                letter-spacing:1px;
+                font-size:22px;
+                font-weight:700;
+                font-family:monospace;
+            }
+
+            nav a:hover{
+                color:gold;
+                font-size:14.5px;
+
+            }
+
+
+            #a{
+                float:right;
+                margin-top:-50px;
+                color:white;
+                margin-right:170px;
+            }
+
+            #b{
+                float:right;
+                margin-top:-50px;
+                color:white;
+                margin-right:130px;
+            }
+
+            #a:hover{
+                color:gold;
+                cursor:pointer;
+
+            }
+
+            #b:hover{
+                color:gold;
+                cursor:pointer;
+                
+            }
+            
+
+            #hd,#pd,#cd,#gd,#rd,#sd{
+                display:none;
+            }
+            
+           #search{
+            height:45px;
+            width:100%;
+            border:1px solid black;
+            margin-top:-18.5px;
+            background:black;
+            margin-left:-3px;
+            
+           }
+
+           #sea_box{
+            width:750px;
+            margin-left:250px;
+            padding:6px;
+            margin-top:8px;
+            border-radius:5px;
+            border-width:0.2px;
+           }
+
+           #sea{
+            margin-left:15px;
+            padding:6px;
+            font-weight:600;
+            font-family:monospace;
+            border-radius:5px;
+            border:none;
+            color:white;
+            background-color:gold;
+
+            
+           }
+
+            #sea:hover{
+                cursor:pointer;
+                background-color:#FAD02C;
+                transition:1.5s;
+                
+                border-radius:5px;
+                padding:7px;
+                letter-spacing:0.8px;
+                
+                
+
+            }
+
+            #tim{
+                display:none;
+                color:white;
+            }
+
+            #tim:hover{
+                color:gold;
+                cursor:pointer;
+
+
+
+            }
+
+            #img_slider{
+                height:550px;
+                width:100%;
+                
+                background-image:url("https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg");
+                margin-top:60px;
+                box-shadow:0px 5px 10px black;
+                background-size:cover;
+                background-repeat:no-repeat;
+                background-position:center;
+                animation-name:myani;
+                animation-timing-function:ease-in-out;
+                animation-duration:20s;
+                animation-iteration-count:infinite;
+                animation-direction:alternate;
+                animation-play-state: running;
+                
+                
+                
+        
+                
+                
+            }
+
+            @keyframes myani{
+                0%{background-image:url("https://cdn.pixabay.com/photo/2017/05/09/15/21/ooty-2298522_1280.jpg");}
+                20%{background-image:url("https://cdn.pixabay.com/photo/2018/07/16/16/08/island-3542290_1280.jpg");}
+                40%{background-image:url("https://cdn.pixabay.com/photo/2016/11/22/22/21/adventure-1850912_1280.jpg");}
+                60%{background-image:url("https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg");}
+                80%{background-image:url("https://cdn.pixabay.com/photo/2019/02/11/11/20/himalayas-3989411_1280.jpg");}
+                100%{background-image:url("https://cdn.pixabay.com/photo/2017/12/16/22/22/bora-bora-3023437_1280.jpg");}
+            }
+    
+
+
+            #book{
+                height:650px;
+                width:100%;
+                
+                margin-top:4px;
+                display:flex;
+                gap:50px;
+                padding-top:5px;
+                text-align:center;
+                
+            }
+            
+             #img_part,#book_form{
+                height:490px;
+                width:630px;
+                
+                margin-top:80px;
+            }
+             
+            #img_part{
+                margin-left:30px;
+            }
+            
+            #img_part img{
+                height:520px;
+        
+                width:676px;
+                border-top-left-radius:5px;
+                border-bottom-left-radius:5px;
+                box-shadow:0px 2px 4px black;
+               
+            }
+
+           
+          
+           #book_form{
+                padding-top:30px;
+                background-color:white;
+                border:none;
+                box-shadow:0px 5px 10px black;
+                
+           }
+           #book_form #txt{
+            letter-spacing:0.3px;
+            word-spacing:15px;
+            color:gold;
+            font-size:21px;
+            font-family:monospace;
+            font-weight:bold;
+            margin-left:-100px;
+            
+           }
+                 
+           #wh{
+            margin-top:100px;
+            margin-left:-240px;
+            font-weight:550;
+            font-family:monospace;
+            letter-spacing:0.3px;
+            word-spacing:2px;
+            font-size:16px;
+           }
+
+           #hm{
+            margin-top:100px;
+            margin-left:-220px;
+            font-weight:550;
+            font-family:monospace;
+            letter-spacing:0.3px;
+            word-spacing:2px;
+            font-size:16px;
+           }
+
+           #ar{
+            margin-top:100px;
+            margin-left:-230px;
+            font-weight:550;
+            font-family:monospace;
+            letter-spacing:0.3px;
+            word-spacing:2px;
+            font-size:16px;
+           }
+
+           #lv{
+            margin-top:100px;
+            margin-left:-230px;
+            font-weight:550;
+            font-family:monospace;
+            letter-spacing:0.3px;
+            word-spacing:2px;
+            font-size:16px;
+           }
+
+           #bt{
+            color:white;
+            background-color:gold;
+            border:none;
+            border-radius:3px;
+            
+           }
+         
+            #bt:hover{
+                background-color:#FAD02C;
+                transition:1s;
+                padding:8px;
+                width:90px;
+                font-size:14px;
+                cursor:pointer;
+            }
+                
+                
+
+
+
+            #packages{
+                height:1500px;
+                width:100%;
+                
+                margin-top:10px;
+                padding-left:15px;
+               
+                
+            
+            }
+            
+            #pt{
+                margin-left:550px;
+                letter-spacing:3px;
+                font-family:monospace;
+                font-weight:900;
+                font-size:22px;
+                
+            
+                
+            }
+            #pt b{
+                border-radius:2px;
+                margin:2px;
+                padding:7px;
+                margin-top:40px;
+                background-color: rgba(255, 255, 0, 0.356);
+                color:#FAD02C;
+            }
+
+
+
+
+            #packages #p1,#p2,#p3{
+                height:430px;
+                width:350px;
+                box-shadow:0px 4px 8px rgba(0, 0, 0, 0.336);
+                display:inline-flex;
+                flex-wrap:wrap;
+                margin:15px;
+            
+               
+                
+            
+            }
+
+            #packages #p1{
+                margin-left:100px;
+            }
+
+            #packages #p4,#p5,#p6{
+                height:430px;
+                width:350px;
+                box-shadow:0px 4px 8px rgba(0, 0, 0, 0.336);
+                
+                display:inline-flex;
+                flex-wrap:wrap;
+                margin:15px;
+            
+               
+                
+            
+            }
+
+            #packages div i{   
+                color:gold;
+                }
+
+            #packages div button{
+                background-color:gold;
+                color:white;
+                border:none;
+                border-radius:3px;
+                
+            }
+
+            #packages div button:hover{
+                background-color:goldenrod;
+                transition:1.5s;
+                cursor: pointer;
+            }
+
+            #packages #p4{
+                margin-left:100px;
+            }
+
+
+            #packages #p7,#p8,#p9{
+                height:430px;
+                width:350px;
+                box-shadow:0px 4px 8px rgba(0, 0, 0, 0.336);
+                display:inline-flex;
+                flex-wrap:wrap;
+                margin:15px;
+            
+               
+                
+            
+            }
+
+            #packages #p7{
+                margin-left:100px;
+            }
+
+
+
+
+
+
+
+
+
+
+            #services{
+                height:800px;
+                width:100%;
+                
+                margin-top:10px;
+                padding-top:40px;
+               
+                
+            
+            }
+            #services div{
+                box-shadow:0px 2px 4px rgba(0, 0, 0, 0.192);
+            }
+
+
+            #st{
+                margin-left:550px;
+                letter-spacing:3px;
+                font-family:monospace;
+                font-weight:3000;
+                font-size:22px;
+                
+            
+                
+                
+            
+                
+            }
+
+            #services i{
+                font-size:33px;
+                margin-left:160px;
+                margin-top:10px;
+                padding-top:20px;
+                color:gold;
+            }
+
+            #services div:hover{
+                transition:1.1s;
+                box-shadow:0px 5px 10px black;
+                border-radius:5px;
+            }
+
+
+            #st b{
+                border-radius:2px;
+                margin:2px;
+                padding:7px;
+                margin-top:40px;
+                background-color: rgba(255, 255, 0, 0.356);
+                color:gold;
+                
+            }
+
+
+            #services #s1,#s2,#s3{
+                height:300px;
+                width:350px;
+                
+                display:inline-flex;
+                flex-wrap:wrap;
+                margin:15px;
+                margin-top:30px;
+            
+               
+                
+            
+            }
+
+            #services #s1{
+                margin-left:120px;
+            }
+
+
+ 
+            #services #s4,#s5,#s6{
+                height:300px;
+                width:350px;
+                
+                display:inline-flex;
+                flex-wrap:wrap;
+                margin:15px;
+            
+               
+                
+            
+            }
+
+
+            #services #s4{
+                margin-left:120px;
+            }
+
+            #services div{
+                padding-right:10px;
+            }
+
+
+        
+
+
+
+            #gallery{
+                height:1600px;
+                width:100%;
+                
+                margin-top:10px;
+                padding-top:40px;
+                display:flex;
+                flex-wrap:wrap;
+                gap:15px;
+                padding-left:55px;
+               
+                
+            
+            }
+
+        
+
+            #gallery #g5,#g6,#g7,#g8{
+                margin-top:-60px;
+            }
+            #gallery #g9,#g10,#g11,#g12{
+                margin-top:-60px;
+            }
+           
+
+            #gallery #g1 #g1h,#g1p{
+                display:none;
+            }
+
+            #gallery #g2 #g2h,#g2p{
+                display:none;
+            }
+
+            #gallery #g3 #g3h,#g3p{
+                display:none;
+            }
+
+            #gallery #g4 #g4h,#g4p{
+                display:none;
+            }
+
+            #gallery #g5 #g5h,#g5p{
+                display:none;
+            }
+
+            #gallery #g6 #g6h,#g6p{
+                display:none;
+            }
+
+            #gallery #g7 #g7h,#g7p{
+                display:none;
+            }
+
+            #gallery #g8 #g8h,#g8p{
+                display:none;
+            }
+
+            #gallery #g9 #g9h,#g9p{
+                display:none;
+            }
+            #gallery #g10 #g10h,#g10p{
+                display:none;
+            }
+
+            #gallery #g11 #g11h,#g11p{
+                display:none;
+            }
+
+            #gallery #g12 #g12h,#g12p{
+                display:none;
+            }
+
+            #gallery #g13 #g13h,#g13p{
+                display:none;
+            }
+
+            #gallery #g14 #g14h,#g14p{
+                display:none;
+            }
+            #gallery #g15 #g15h,#g15p{
+                display:none;
+            }
+            #gallery #g16 #g16h,#g16p{
+                display:none;
+            }
+            #gallery div img{
+                border-radius:3px;
+                box-shadow:0px 2px 4px black;
+                
+            }
+
+           
+
+            #gallery div img:hover{
+                box-shadow:0px 6px 12px black;
+                transition:1s;
+                border-radius:10px;
+            
+                
+               
+               
+                
+                
+                
+            }
+            #gallery #g5,#g6,#g7,#g8{
+                margin-top:-140px;
+            }
+
+            #gallery #g9,#g10,#g11,#g12{
+                margin-top:-140px;
+            }
+
+           #gallery #g13,#g14,#g15,#g16{
+                margin-top:-140px;
+            }
+
+            #gt{
+                margin-left:550px;
+                letter-spacing:3px;
+                font-family:monospace;
+                font-weight:3000;
+                font-size:22px;
+                
+            
+                
+                
+            
+                
+            }
+
+
+            #gt b{
+                border-radius:2px;
+                margin:2px;
+                padding:7px;
+                margin-top:40px;
+                background-color: rgba(255, 255, 0, 0.356);
+                color:gold;
+                
+            }
+
+
+
+            #rt{
+                margin-left:550px;
+                letter-spacing:3px;
+                font-family:monospace;
+                font-weight:3000;
+                font-size:22px;
+
+            }
+                
+            
+                #review{
+                height:530px;
+                width:100%;
+                
+                margin-top:10px;
+                padding-top:40px;
+                display:flex;
+                flex-wrap:wrap;
+                gap:15px;
+                padding-left:55px;
+               
+                
+            
+            }
+                
+                
+            
+                
+            
+
+            #rt b{
+                border-radius:2px;
+                margin:2px;
+                padding:7px;
+                margin-top:40px;
+                background-color: rgba(255, 255, 0, 0.356);
+                color:gold;
+                
+            }
+
+            #review div{
+                height:400px;
+                width:260px;
+                box-shadow:0px 4px 8px rgba(0, 0, 0, 0.288);
+                display:flex;
+                flex-wrap:wrap;
+                gap:5px;
+            }
+
+            #review #r1{
+                margin-left:-40px;
+            }
+
+
+            #review img{
+                height:90px;
+                width:90px;
+                border-radius:50%;
+                margin-top:20px;
+                margin-left:80px;
+                
+            }
+
+            #review i{
+                color:gold;
+                font-size:20px;
+                margin:0.5px;
+                margin-top:-20px;
+            }
+
+            #review span{
+                font-family:monospace;
+                letter-spacing:0.5px;
+                font-size:17px;
+                font-weight:700;
+                
+            }
+
+            #review p{
+                font-size:12px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight:400;
+                text-transform:capitalize;
+                color:rgba(0, 0, 0, 0.651);
+
+            }
+
+            #review img:hover{
+                box-shadow:0px 5px 10px black;
+                height:100px;
+                width:100px;
+            }
+
+
+            #contact{
+                height:550px;
+                width:100%;
+                
+            
+            }
+
+            #ct{
+                margin-left:550px;
+                letter-spacing:3px;
+                font-family:monospace;
+                font-weight:3000;
+                font-size:22px;
+                margin-top:150px;
+
+            }
+
+            #ct b{
+                border-radius:2px;
+                margin:2px;
+                padding:7px;
+                margin-top:40px;
+                background-color: rgba(255, 255, 0, 0.356);
+                color:gold;
+                
+            }
+
+            #contact #cform{
+                height:380px;
+                width:600px;
+                box-shadow:0px 5px 10px rgba(0, 0, 0, 0.253);
+                float:right;
+                margin-right:60px;
+                margin-top:50px;
+                padding:10px;
+                background-color:rgba(245, 222, 179, 0.178);
+            }
+
+            #cform #cbut{
+                color:white;
+                background-color:gold;
+                border:none;
+                border-radius:3px;
+            }
+
+            #cform #cbut:hover{
+                background:#FAD02C;
+                transition:1s;
+                padding:9px;
+                cursor:pointer;
+            }
+                
+
+        
+
+
+
+
+
+
+
+
+
+
+            #foot{
+                height:300px;
+                width:100%;
+                border-radius:3px;
+                display:flex;
+                flex-wrap:wrap;
+                gap:15px;
+                padding-top:35px;
+                padding-left:30px;
+                background-color:#ffff0017;
+                
+            }
+
+            #foot div{
+                height:210px;
+                width:300px;
+                
+                padding-top:30px;
+                
+
+            }
+
+            #foot div span{
+                font-weight:700;
+                font-family:monospace;
+                font-size:18px;
+                margin-left:93px;
+                color:gold;
+                letter-spacing:1px;
+            }
+
+            #foot div ul li{
+                list-style-type:none;
+                line-height:25px;
+                margin-left:55px;
+
+            }
+
+            #foot div ul li a{
+                text-decoration:none;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size:14px;
+                letter-spacing:0.3px;
+                font-weight:400;
+                color:#fad12cb2;
+               
+            }
+
+            #foot div ul li a:hover{
+                color:gold;
+            }
+
+
+        
+
+        
+        </style>
+<script>
+
+    $(document).ready(function(){
+        $("#h").hover(function(){
+            $("#hd").toggle().css('border-color','#FAD02C');
+        })
+
+       
+
+        $("#p").hover(function(){
+            $("#pd").toggle().css('border-color','#FAD02C').css('margin-top','-2px');
+        })
+     
+
+        $("#s").hover(function(){
+            $("#sd").toggle().css('border-color','#FAD02C');
+        })
+        
+        $("#g").hover(function(){
+            $("#gd").toggle().css('border-color','#FAD02C');
+        })
+
+        $("#r").hover(function(){
+            $("#rd").toggle().css('border-color','#FAD02C');
+        })
+
+        $("#c").hover(function(){
+            $("#cd").toggle().css('border-color','#FAD02C');
+        })
+        
+        $("#search").hide();
+        
+
+        $("#b1").click(function(){
+
+            $("#search").toggle();
+            $("#b1").hide();
+            $("#tim").show(function(){
+                
+                $("#tim").click(function(){
+                    $("#search").hide();
+                    $("#tim").hide();
+                    $("#b1").show();
+                })
+            });
+
+        });
+
+        $("#g1").mouseenter(function(){
+            $("#g1h,#g1p").show(1000);
+        })
+        $("#g1").mouseleave(function(){
+            $("#g1h,#g1p").hide(1000);
+        })
+
+
+        $("#g2").hover(function(){
+        
+            $("#g2h,#g2p").toggle(1000);
+        })
+
+        $("#g3").hover(function(){
+        
+        $("#g3h,#g3p").toggle(1000);
+    })
+
+    $("#g4").hover(function(){
+        
+        $("#g4h,#g4p").toggle(1000);
+    })
+
+    $("#g5").hover(function(){
+        
+        $("#g5h,#g5p").toggle(1000);
+    })
+
+    $("#g6").hover(function(){
+        
+        $("#g6h,#g6p").toggle(1000);
+    })
+
+    $("#g7").hover(function(){
+        
+        $("#g7h,#g7p").toggle(1000);
+    })
+
+    $("#g8").hover(function(){
+        
+        $("#g8h,#g8p").toggle(1000);
+    })
+
+    $("#g9").hover(function(){
+        
+        $("#g9h,#g9p").toggle(1000);
+    })
+
+    $("#g10").hover(function(){
+        
+        $("#g10h,#g10p").toggle(1000);
+    })
+    $("#g11").hover(function(){
+        
+        $("#g11h,#g11p").toggle(1000);
+    })
+
+    $("#g12").hover(function(){
+        
+        $("#g12h,#g12p").toggle(1000);
+    })
+
+    $("#g13").hover(function(){
+        
+        $("#g13h,#g13p").toggle(1000);
+    })
+
+    $("#g14").hover(function(){
+        
+        $("#g14h,#g14p").toggle(1000);
+    })
+
+    $("#g15").hover(function(){
+        
+        $("#g15h,#g15p").toggle(1000);
+    })
+
+    $("#g16").hover(function(){
+        
+        $("#g16h,#g16p").toggle(1000);
+    })
+       
+
+    $("#image_slider #sp1").hide();
+    $("#image_slider").hover(function(){
+        $("#image_slider #sp1").toggle(2000);
+    })
+
+
+    })
+</script>
+        
+        
+</head>
+<body>
+    <nav>
+
+        <a id="h" href="#" style="padding-left:360px;">Home</a>
+        <!--<a id="b" href="#book">Book</a>-->
+        <a id="p" href="#packages">Packages</a>
+        <a id="s" href="#services">Services</a>
+        <a id="g" href="#gallery">Gallery</a>
+        <a id="r" href="#review">Review</a>
+        <a id="c" href="#ci">Contact</a>
+       
+        <div id="hd" style="width:20px;border:2px solid white;margin-left:376px;border-radius:5px;border-color:#FFFF00"></div>
+       <!-- <div id="bd" style="width:20px;border:2px solid white;margin-left:420px;margin-top:-4px;border-radius:5px;border-color:#FFFF00"></div>-->
+        <div id="pd" style="width:28px;border:2px solid white;margin-left:455px;margin-top:-0.2px;border-radius:5px;border-color:#FFFF00"></div>
+        <div id="sd" style="width:28px;border:2px solid white;margin-left:557px;border-radius:5px;border-color:#FFFF00"></div>
+        <div id="gd" style="width:28px;border:2px solid white;margin-left:655px;border-radius:5px;border-color:#FFFF00"></div>
+        <div id="rd" style="width:28px;border:2px solid white;margin-left:740px;border-radius:5px;border-color:#FFFF00"></div>
+        <div id="cd" style="width:28px;border:2px solid white;margin-left:826px;border-radius:5px;border-color:#FFFF00"></div>
+        
+        
+        
+         <h3><font color="gold" size="24px">B</font>hoomi Yaatra <i class="fa-solid fa-earth-asia" style="font-size:26px"></i></h3>
+
+        <a href="#" id="a1"><i id="a" class="fa-solid fa-user"></i></a>
+        <a href="#" id="b1"><i id="b" class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" id="tim" style="float:right;margin-top:-55px;margin-right:130px;font-size:20px">&times;</a>
+        <br>
+
+    <div id="search">
+        <input type="search" id="sea_box" placeholder="search here...">
+        <button id="sea">Search</button>
+
+    </div>
+
+       
+   
+    
+    
+    </nav><br>
+
+    <div id="img_slider" style="padding-top:200px">
+
+        <span id="sp1" style="font-family: 'Cabin', sans-serif;
+        font-family: 'Instrument Serif', serif;
+        font-family: 'Lobster', cursive;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Rubik Puddles', cursive;
+        font-family: 'Signika Negative', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
+            margin-left:400px;line-height:85px;font-size:40px;letter-spacing:1px;word-spacing:5px;color:gold;font-weight:1000;text-shadow:3px 3px black;">
+            Whereever You go,<br>
+            <span style="margin-left:600px;margin-top:10px">go with all your heart❤️...</span>
+
+        </span>
+
+    </div>
+
+
+    <div id="book">
+        <div id="img_part">
+
+            <img src="https://cdn.pixabay.com/photo/2018/03/17/19/23/world-map-3234899_1280.jpg">
+
+        </div>
+        <div id="book_form">
+            <span id="txt"><b style="border-radius:2px;padding:5px;padding-left:10px;padding-right:6px;background-color:rgba(255, 255, 0, 0.356);font-weight:900">B</b>
+                <b style="border-radius:2px;padding:5px;padding-left:10px;padding-right:6px;margin-left:-25px;background-color:rgba(255, 255, 0, 0.356);font-weight:900">O</b>
+                <b style="border-radius:2px;padding:5px;padding-left:10px;padding-right:6px;margin-left:-25px;background-color:rgba(255, 255, 0, 0.356);font-weight:900">O</b>
+                <b style="border-radius:2px;padding:5px;padding-left:10px;padding-right:6px;margin-left:-25px;background-color:rgba(255, 255, 0, 0.356);font-weight:900">K</b>
+
+                <b style="border-radius:2px;padding:5px;padding-left:10px;padding-right:6px;margin-left:3px;background-color:rgba(255, 255, 0, 0.356);font-weight:900">N</b>
+                <b style="border-radius:2px;padding:5px;padding-left:10px;padding-right:6px;margin-left:-25px;background-color:rgba(255, 255, 0, 0.356);font-weight:900">O</b>
+                <b style="border-radius:2px;padding:5px;padding-left:10px;padding-right:6px;margin-left:-25px;background-color:rgba(255, 255, 0, 0.356);font-weight:900">W</b>
+                </span>
+                <br>
+                <br>
+                <br>
+                <br>
+               
+
+             <form action="file:///C:/Users/RAMESH%20THONANGI/Desktop/HTML_WORKSPACE/booking_thankyou_form.html" method="post" target="self">
+             <span id="wh">Where To</span><br>
+             <input type="text" required="required" maxlength="20" minlength="3" style="margin-top:5px;width:400px;margin-left:120px;padding:5px;">
+             <br>
+             <br>
+
+             <span id="hm">How Many</span><br>
+             <input type="number" required="required"  style="margin-top:5px;width:400px;margin-left:120px;padding:5px;">
+
+             <br>
+             <br>
+             <span id="ar">Arrivals</span><br>
+             <input type="date" required="required"  style="margin-top:5px;width:400px;margin-left:120px;padding:5px;">
+
+             <br>
+             <br>
+             <span id="lv">Leaving</span><br>
+             <input type="date" required="required"  style="margin-top:5px;width:400px;margin-left:120px;padding:5px;">
+
+             <br>
+             <br>
+             <br>
+             <button id="bt" onclick="#" style="padding:7px;letter-spacing:0.5px;font-weight:500;margin-left:-200px;">Book Now</button>
+            </form>
+        
+            </div>
+
+    </div>
+
+    <div id="packages">
+        <br>
+        <br>
+        
+        <span id="pt"><b>P</b><b>A</b><b>C</b><b>K</b><b>A</b><b>G</b><b>E</b><b>S</b></span>
+        <br>
+        <br>
+        <br>
+        <div id="p1">
+            <img src="https://cdn.pixabay.com/photo/2018/09/11/17/20/jaipur-3670085_1280.jpg" style="
+                height:200px;width:370px;margin:10px;border-radius:5px"><br>
+
+                <span style="
+                margin-left:25px;
+                margin-top:-35px;letter-spacing:1px;font-family:monospace;font-size:18px;font-weight:700"><i class="fa-solid fa-location-dot"></i>Rajasthan</span>
+                
+                <p style="margin-left:28px;margin-top:-60px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size:13px">
+                    rajasthan known as land of kings,it is famous for its magnificient forts,palaces,and rich 
+                    cultural heritage.
+                </p>
+                <br>
+                <i class="fa-solid fa-star" style="margin-left:25px;margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i>
+                <i class="fa-regular fa-star" style="margin-top:-40px;"></i>
+                <br>
+                <span style="margin-top:-10px;margin-left:-85px;font-family:monospace;font-size:15px">$90.00</span><strike style="margin-top:-5px;font-size:13px;margin-left:5px;color:rgba(0, 0, 0, 0.527)">$120.00</strike>
+                <br>
+                <form action="#book">
+
+                <button style="width:120px;height:32px;margin-top:28px;margin-left:-96px;" onclick="#book">Book Now</button>
+            </form>
+            </div>
+
+        <div id="p2">
+            <img src="https://cdn.pixabay.com/photo/2016/03/27/17/26/water-1283199_1280.jpg" style="
+            height:200px;width:330px;border-radius:5px;margin:10px;">
+            
+            <span style="
+                margin-left:25px;
+                margin-top:-35px;letter-spacing:1px;font-family:monospace;font-size:18px;font-weight:700"><i class="fa-solid fa-location-dot"></i>Kerala</span>
+                
+                <p style="margin-left:28px;margin-top:-40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size:13px">
+                    kerala known as"Gods Own Country",
+                    kerala beaches,boasts serene backwaters,
+                    iush tea plantations.
+                </p>
+                <br>
+                <i class="fa-solid fa-star" style="margin-left:25px;margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i>
+                <i class="fa-regular fa-star" style="margin-top:-40px;"></i>
+                <br>
+                <span style="margin-top:-10px;margin-left:-85px;font-family:monospace;font-size:15px">$90.00</span><strike style="margin-top:-5px;font-size:13px;margin-left:5px;color:rgba(0, 0, 0, 0.527)">$120.00</strike>
+                <br>
+                <form action="#book">
+                <button style="width:120px;height:32px;margin-top:28px;margin-left:-96px;">Book Now</button>
+            </form>
+
+
+        </div>
+
+        <div id="p3">
+            <img src="https://cdn.pixabay.com/photo/2020/02/22/05/04/snow-4869331_1280.jpg" style="
+            height:200px;width:330px;border-radius:10px;margin:10px;">
+            
+
+            <span style="
+                margin-left:25px;
+                margin-top:-35px;letter-spacing:1px;font-family:monospace;font-size:18px;font-weight:700"><i class="fa-solid fa-location-dot"></i>Himachal Pradesh</span>
+                
+                <p style="margin-left:28px;margin-top:-40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size:13px">
+                    Himachal Pradesh offers breathtaking landscapes,
+                    adventure sports,and popular hill stations like 
+                    shimla,manali.
+                </p>
+                <br>
+                <i class="fa-solid fa-star" style="margin-left:25px;margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i>
+                <i class="fa-regular fa-star" style="margin-top:-40px;"></i>
+                <br>
+                <span style="margin-top:-10px;margin-left:-85px;font-family:monospace;font-size:15px">$90.00</span><strike style="margin-top:-5px;font-size:13px;margin-left:5px;color:rgba(0, 0, 0, 0.527)">$120.00</strike>
+                <br>
+                 
+                <form action="#book">
+                <button style="width:120px;height:32px;margin-top:28px;margin-left:-96px;">Book Now</button>
+                
+            </form>
+
+
+
+
+        </div><br>
+
+        <div id="p4">
+            <img src="https://cdn.pixabay.com/photo/2022/11/03/16/57/dancer-7567926_1280.jpg" style="
+            height:200px;width:330px;border-radius:10px;margin:10px;">
+              
+              <span style="
+                margin-left:25px;
+                margin-top:-35px;letter-spacing:1px;font-family:monospace;font-size:18px;font-weight:700"><i class="fa-solid fa-location-dot"></i>Tamilnadu</span>
+                
+                <p style="margin-left:28px;margin-top:-40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size:13px">
+                    Tamilnadu is home to ancient temples like Meenakshi Temple in Madurai,
+                    Brihadeeswarar Temple in Tanjavur.
+
+                </p>
+                <br>
+                <i class="fa-solid fa-star" style="margin-left:25px;margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i>
+                <i class="fa-regular fa-star" style="margin-top:-40px;"></i>
+                <br>
+                <span style="margin-top:-10px;margin-left:-85px;font-family:monospace;font-size:15px">$90.00</span><strike style="margin-top:-5px;font-size:13px;margin-left:5px;color:rgba(0, 0, 0, 0.527)">$120.00</strike>
+                <br>
+                <form action="#book">
+                <button style="width:120px;height:32px;margin-top:28px;margin-left:-96px;">Book Now</button>
+                </form>
+        
+
+
+
+        </div>
+
+        <div id="p5">
+            <img src="https://t4.ftcdn.net/jpg/03/29/49/43/360_F_329494352_g3bq2CUQxOtWa4NmMxU4p1WrdZqENu8t.jpg" style="
+            height:200px;width:330px;border-radius:10px;margin:10px;">
+             <span style="
+             margin-left:25px;
+             margin-top:-35px;letter-spacing:1px;font-family:monospace;font-size:18px;font-weight:700"><i class="fa-solid fa-location-dot"></i>Maharastra</span>
+             
+             <p style="margin-left:28px;margin-top:-40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size:13px">
+                 Maharastra is home to the bustling city of mumbai,historic
+                 sites like Ajanta and Ellora Caves,Hill stations like Lonavala And
+                 Mahabaleswar,and beautiful beachesin Alibaug.
+             </p>
+             <br>
+             <i class="fa-solid fa-star" style="margin-left:25px;margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i>
+             <i class="fa-regular fa-star" style="margin-top:-40px;"></i>
+             <br>
+             <span style="margin-top:-10px;margin-left:-85px;font-family:monospace;font-size:15px">$90.00</span><strike style="margin-top:-5px;font-size:13px;margin-left:5px;color:rgba(0, 0, 0, 0.527)">$120.00</strike>
+             <br>
+             <form action="#book">
+             <button style="width:120px;height:32px;margin-top:28px;margin-left:-96px;">Book Now</button>
+             </form>
+
+
+
+        </div>
+
+        <div id="p6">
+            <img src="https://media.istockphoto.com/id/186255464/photo/bangalore-skyline-india.jpg?s=612x612&w=0&k=20&c=_kUTev1oSISvvP60lPxNAv9QZcwKOj3djjXF3zUxFLc=" style="
+            height:200px;width:330px;border-radius:10px;margin:10px;">
+
+<span style="
+margin-left:25px;
+margin-top:-35px;letter-spacing:1px;font-family:monospace;font-size:18px;font-weight:700"><i class="fa-solid fa-location-dot"></i>Karnataka</span>
+
+<p style="margin-left:28px;margin-top:-40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size:13px">
+    Karnataka offers a mix of ancient temples,wildlife sancutuaries,historic ruins of humpi,
+    beautiful beaches in Gokarna, and the vibrant view of bangolore city.
+</p>
+<br>
+<i class="fa-solid fa-star" style="margin-left:25px;margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i>
+<i class="fa-regular fa-star" style="margin-top:-40px;"></i>
+<br>
+<span style="margin-top:-10px;margin-left:-85px;font-family:monospace;font-size:15px">$90.00</span><strike style="margin-top:-5px;font-size:13px;margin-left:5px;color:rgba(0, 0, 0, 0.527)">$120.00</strike>
+<br>
+<form action="#book">
+<button style="width:120px;height:32px;margin-top:28px;margin-left:-96px;">Book Now</button>
+</form>
+
+
+        </div>
+     
+
+        <div id="p7">
+            <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2021/07/Goa_Image1-1-1-1280x720.jpg" style="
+            height:200px;width:330px;border-radius:10px;margin:10px;">
+
+<span style="
+margin-left:25px;
+margin-top:-35px;letter-spacing:1px;font-family:monospace;font-size:18px;font-weight:700"><i class="fa-solid fa-location-dot"></i>Goa</span>
+
+<p style="margin-left:28px;margin-top:-40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size:13px">
+    Renowned for its stunning beaches and vibrant night life,goa portugese heritage ,ancient churches and 
+    indulge in water sports and delicious sea food.
+</p>
+<br>
+<i class="fa-solid fa-star" style="margin-left:25px;margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i>
+<i class="fa-regular fa-star" style="margin-top:-40px;"></i>
+<br>
+<span style="margin-top:-10px;margin-left:-85px;font-family:monospace;font-size:15px">$90.00</span><strike style="margin-top:-5px;font-size:13px;margin-left:5px;color:rgba(0, 0, 0, 0.527)">$120.00</strike>
+<br>
+<form action="#book">
+<button style="width:120px;height:32px;margin-top:28px;margin-left:-96px;">Book Now</button>
+</form>
+
+                 
+
+
+        </div>
+
+        <div id="p8">
+            <img src="data:image/jpeg;base64,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" style="
+            height:200px;width:330px;border-radius:10px;margin:10px;">
+
+<span style="
+margin-left:25px;
+margin-top:-35px;letter-spacing:1px;font-family:monospace;font-size:18px;font-weight:700"><i class="fa-solid fa-location-dot"></i>Uttarapradesh</span>
+
+<p style="margin-left:28px;margin-top:-40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size:13px">
+    Home to iconic landmarks sucha as TajMahal,it offers Historical sites like 
+    varanasi,Luknow,and Allahabad.
+</p>
+<br>
+<i class="fa-solid fa-star" style="margin-left:25px;margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i>
+<i class="fa-regular fa-star" style="margin-top:-40px;"></i>
+<br>
+<span style="margin-top:-10px;margin-left:-85px;font-family:monospace;font-size:15px">$90.00</span><strike style="margin-top:-5px;font-size:13px;margin-left:5px;color:rgba(0, 0, 0, 0.527)">$120.00</strike>
+<br>
+<form action="#book">
+<button style="width:120px;height:32px;margin-top:28px;margin-left:-96px;">Book Now</button>
+</form>
+
+
+        </div>
+
+        <div id="p9">
+            <img src="https://static2.tripoto.com/media/filter/tst/img/371661/TripDocument/1489591276_1489591249075.jpg" style="
+            height:200px;width:330px;border-radius:10px;margin:10px;">
+
+<span style="
+margin-left:25px;
+margin-top:-35px;letter-spacing:1px;font-family:monospace;font-size:18px;font-weight:700"><i class="fa-solid fa-location-dot"></i>Andhrapradesh</span>
+
+<p style="margin-left:28px;margin-top:-40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size:13px">
+   Andhrapradesh Known for its rich history,vibrant culture and diverse landscapes.
+   it offers beautiful beaches like in Vishakapatnam,historical temples,forts ,beautiful Valleys like Araku.
+
+</p>
+<br>
+<i class="fa-solid fa-star" style="margin-left:25px;margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i><i class="fa-solid fa-star" style="margin-top:-40px;"></i>
+<i class="fa-regular fa-star" style="margin-top:-40px;"></i>
+<br>
+<span style="margin-top:-10px;margin-left:-85px;font-family:monospace;font-size:15px">$90.00</span><strike style="margin-top:-5px;font-size:13px;margin-left:5px;color:rgba(0, 0, 0, 0.527)">$120.00</strike>
+<br>
+<form action="#book">
+<button style="width:120px;height:32px;margin-top:28px;margin-left:-96px;">Book Now</button>
+</form>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="services">
+        <span id="st">
+            <b>S</b><b>E</b><b>R</b><b>V</b><b>I</b><b>C</b><b>E</b><b>S</b>
+        </span><br><br>
+
+        <div id="s1">
+            <i class="fa-solid fa-hotel"></i><br>
+            <h3 style="margin-top:70px;margin-left:-80px;letter-spacing:1px;">Affordable Hotels</h3><br>
+            <p style="margin-top:-80px;margin-left:22px;line-height:25px;
+            font-weight:500;font-size:15px;font-family:Arial, Helvetica, sans-serif;color:rgba(0, 0, 0, 0.849)">
+            we can suggest you the best hotels for you<br>
+            no doubt in this.we suggest the the hotels which<br>
+        are good in clinliness and serving the food etc..</p>
+            
+
+        </div>
+
+        <div id="s2">
+            <i class="fa-solid fa-utensils"></i>
+            <h3 style="margin-top:70px;margin-left:-80px;letter-spacing:1px;">Food And Drinks</h3><br>
+            <p style="margin-top:-80px;margin-left:24px;line-height:25px;
+            font-weight:500;font-size:15px;font-family:Arial, Helvetica, sans-serif;color:rgba(0, 0, 0, 0.849)">we can provide you the best food for you<br>
+            no doubt in this.we suggest you the more varities<br> which
+        are so yummy  and delicious..</p>
+            
+            
+
+        </div>
+
+        <div id="s3">
+            <i class="fa-solid fa-bullhorn"></i>
+            <h3 style="margin-top:70px;margin-left:-80px;letter-spacing:1px;">Saftey Guide</h3><br>
+            <p style="margin-top:-80px;margin-left:24px;line-height:25px;
+            font-weight:500;font-size:15px;font-family:Arial, Helvetica, sans-serif;color:rgba(0, 0, 0, 0.849)">
+            we can provide you more saftey & security<br>
+             no doubt in this.your saftey is our responsibility<br>
+             we will take care of u guys..</p>
+            
+           
+        </div>
+
+        <div id="s4">
+            <i class="fa-solid fa-earth-asia"></i>
+            <h3 style="margin-top:70px;margin-left:-80px;letter-spacing:1px;">Around The World</h3><br>
+            <p style="margin-top:-80px;margin-left:24px;line-height:25px;
+            font-weight:500;font-size:15px;font-family:Arial, Helvetica, sans-serif;color:rgba(0, 0, 0, 0.849)">
+            we can suggest you the best hotels for you<br>
+            no doubt in this.we suggest the the hotels which<br>
+        are good in clinliness and serving the food etc..</p>
+            
+            
+            
+
+        </div>
+
+        <div id="s5">
+            <i class="fa-solid fa-plane"></i>
+            <h3 style="margin-top:70px;margin-left:-80px;letter-spacing:1px;">Fastest Travel</h3><br>
+            <p style="margin-top:-80px;margin-left:24px;line-height:25px;
+            font-weight:500;font-size:15px;font-family:Arial, Helvetica, sans-serif;color:rgba(0, 0, 0, 0.849)">we can suggest you the planes for your fastest<br>
+             travelling
+            train,bus etc., all these will make you <br>so tired
+            flight journey is the best for your great journey..</p>
+            
+            
+
+        </div>
+
+        <div id="s6">
+            <i class="fas fa-skating"></i>
+            <h3 style="margin-top:70px;margin-left:-80px;letter-spacing:1px;">Adventures</h3><br>
+            <p style="margin-top:-80px;margin-left:24px;line-height:25px;
+            font-weight:500;font-size:15px;font-family:Arial, Helvetica, sans-serif;color:rgba(0, 0, 0, 0.849)">we can suggest you the best hotels for you<br>
+            no doubt in this.we suggest the the hotels which<br>
+        are good in clinliness and serving the food etc..</p>
+            
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <span id="gt">
+        <b>G</b><b>A</b><b>L</b><b>L</b><b>E</b><b>R</b><b>Y</b>
+    </span><br><br>
+
+    <div id="gallery">
+
+        <div id="g1">
+            
+            <img src="https://cdn.pixabay.com/photo/2023/01/07/11/30/alpine-7703065_1280.jpg" height="300px" width="300px">
+    
+            <h3 id="g1h"  style="margin-top:-260px;margin-left:100px;color:gold">Himalayas</h3><br>
+            <p id="g1p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">The Himalayas,is a mountain range in <br>Asia, 
+             separating the plains of the Indian <br>subcontinent from the Tibetan Plateau. 
+             </p> 
+     
+            
+
+        </div>
+        <div id="g2">
+            <img src="https://cdn.pixabay.com/photo/2021/04/05/12/35/tajmahal-6153286_1280.jpg" height="300px" width="300px">
+            <h3 id="g2h"  style="margin-top:-260px;margin-left:100px;color:gold">Tajmahal</h3><br>
+            <p id="g2p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                The Taj Mahal is an ivory-white marble <br>
+                mausoleum on the south bank of the <br>Yamuna river in the
+                 Indian city of Agra.<br> It was commissioned 
+                 in 1632 by the <br> Mughal emperor,Shah Jahan
+             </p> 
+      
+        </div>
+        <div id="g3">
+            <img src="https://cdn.pixabay.com/photo/2014/07/20/16/08/golden-temple-397886_1280.jpg" height="300px" width="300px">
+            <h3 id="g3h"  style="margin-top:-260px;margin-left:100px;color:gold">Golden Temple</h3><br>
+            <p id="g3p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                The Golden temple is famous for its <br>
+                full golden dome, it is one of the most <br>
+                sacred pilgrim spots for Sikhs. The Mandir <br>
+                built on a 67-ft square of marble and is a <br>two storied structure.
+             </p> 
+        </div>
+        <div id="g4">
+            <img src="https://cdn.pixabay.com/photo/2018/12/18/10/41/india-3882103_1280.jpg" height="300px" width="300px">
+            <h3 id="g4h"  style="margin-top:-260px;margin-left:100px;color:gold">Goa</h3><br>
+            <p id="g4p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                It is located about 250 miles<br> south 
+                of Mumbai .
+                 One of India's 
+                 <br>smallest states, it is bounded 
+                 by the <br>states of Maharashtra on the north<br> and 
+                 Karnataka.
+                 
+             </p> 
+        </div>
+        <div id="g5">
+            <img src="https://content.jdmagicbox.com/comp/delhi/f9/011pxx11.xx11.111111120826.t8f9/catalogue/india-gate-india-gate-delhi-tourist-attraction-1v5815e.jpg" height="300px" width="300px">
+            
+            <h3 id="g5h"  style="margin-top:-260px;margin-left:100px;color:gold">Indian Gate</h3><br>
+            <p id="g5p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                The iconic India Gate, an arch gate made <br>using sandstone,
+                 is a war memorial situated <br>in the Rajpath area, Delhi. 
+                 
+             </p> 
+        </div>
+        <div id="g6">
+            <img src="https://static.toiimg.com/thumb/msid-94144996,width-400,resizemode-4/94144996.jpg" height="300px" width="300px">
+            <h3 id="g6h"  style="margin-top:-260px;margin-left:100px;color:gold">Charminar</h3><br>
+            <p id="g6p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                It is a square shaped monument with <br>four pillars, one on each side. The <br>architectural design of Charminar is inspired <br>from the Shia “tazias”. 
+                 
+             </p> 
+        </div>
+        <div id="g7">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/b7/1f/31/qutab-minar.jpg?w=1200&h=1200&s=1" height="300px" width="300px">
+            <h3 id="g7h"  style="margin-top:-260px;margin-left:100px;color:gold">Qutib Minar</h3><br>
+            <p id="g7p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                Built of red and buff sandstone and <br>eloquently 
+                carved with inscriptional bands, <br>the Qutb Minar
+                 is the tallest masonry tower <br>in India, measuring 
+                 72.5 metres high, with <br>projecting balconies for 
+                 calling all Muadhdin<br>to prayer. 
+                 
+             </p> 
+        </div>
+        <div id="g8">
+            <img src="https://karnatakatourism.org/wp-content/uploads/2020/06/Mysuru-Palace-banner-1920_1100.jpg" height="300px" width="300px">
+            <h3 id="g8h"  style="margin-top:-260px;margin-left:100px;color:gold">Mysore Palace</h3><br>
+            <p id="g8p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                Mysore Palace, also known as Amba Vilas <br>Palace, 
+                is a historical palace and a royal  <br>residence.
+                It is located in Mysore, Karnataka,<br> India. 
+                 
+             </p> 
+        </div>
+        <div id="g9">
+            <img src="https://images.myguide-cdn.com/rajasthan/companies/lake-pichola-evening-boat-ride-with-private-transfers/large/lake-pichola-evening-boat-ride-with-private-transfers-1338581.jpg" height="300px" width="300px">
+            <h3 id="g9h"  style="margin-top:-260px;margin-left:100px;color:gold">Pichola Lake</h3><br>
+            <p id="g9p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                One of the oldest and the biggest lakes<br>
+                 in Udaipur, Pichola lake is world famous<br>
+                  for its picturesque beauty and scenic <br>
+                  surrounding.
+             </p> 
+        </div>
+        <div id="g10">
+            <img src="https://assets-news.housing.com/news/wp-content/uploads/2021/07/20184714/All-about-the-Delhi-Red-Fort-or-Lal-Kila-FB-1200x700-compressed-2-686x400.jpg" height="300px" width="300px">
+            <h3 id="g10h"  style="margin-top:-260px;margin-left:100px;color:gold">Red Fort</h3><br>
+            <p id="g10p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                The Red Fort Complex was built as the <br>palace 
+                fort of Shahjahanabad – the new <br>capital
+                of the fifth Mughal Emperor of India,<br>
+                 Shah Jahan.
+             </p> 
+        </div>
+        <div id="g11">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/cf/f3/ed/thousand-year-old-temple.jpg?w=1200&h=1200&s=1" height="300px" width="300px">
+            <h3 id="g11h"  style="margin-top:-260px;margin-left:60px;color:gold">Virupaksha Temple</h3><br>
+            <p id="g11p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                Virupaksha Temple is the 7th century <br>
+                Shiva temple in Hampi, Lord Virupaksha,<br>
+                 also referred to as Pampapathi is the <br>
+                 main deity in Virupaksha Temple. 
+             </p>
+        </div>
+        <div id="g12">
+            <img src="https://as1.ftcdn.net/v2/jpg/00/58/07/58/1000_F_58075805_plIjD1vXURfhuDuxmc28gZUTuxbziHTO.jpg" height="300px" width="300px">
+            <h3 id="g12h"  style="margin-top:-260px;margin-left:100px;color:gold">Vembanad Lake</h3><br>
+            <p id="g12p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                Vembanad Lake is the longest backwater in <br>
+                Kerala, as well as the longest lake in India. 
+             </p> 
+        </div>
+
+        <div id="g13">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNgGILtO1qcLLYZhmrPT4bBNRFEIH7zBBb7Q&usqp=CAU" height="300px" width="300px">
+          <h3 id="g13h"  style="margin-top:-260px;margin-left:100px;color:gold">Jog Falls</h3><br>
+            <p id="g13p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                Jog Falls is a waterfall on the Sharavati<br>
+                 river located in the Western Ghats in <br>
+                 Shimoga district of Karnataka, India. <br>
+                 It is the third highest plunge waterfall<br> in India.
+             </p> 
+        </div>
+
+        <div id="g14">
+            <img src="https://vizagtourism.org.in/images/places-to-visit/header/araku-valley-vizag-tourism-entry-fee-timings-holidays-reviews-header.jpg" height="300px" width="300px">
+            <h3 id="g14h"  style="margin-top:-260px;margin-left:100px;color:gold">Araku Valley</h3><br>
+            <p id="g14p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+            Araku Valley is a hill station in Alluri <br>
+            Sitharama Raju district in the Indian <br>
+            state of Andhra Pradesh, <br>
+            lying 111 km west of Visakhapatnam <br>
+            city.
+            </p>
+        </div>
+
+        <div id="g15">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlO6UXnqbRN6nN82gn5kpg-168KDQwCfKStw&usqp=CAU" height="300px" width="300px">
+            <h3 id="g15h"  style="margin-top:-260px;margin-left:100px;color:gold">Meenakshi Temple</h3><br>
+            <p id="g15p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                Arulmigu Meenakshi Sundaraswarar Temple <br>is a
+                historic Hindu temple located on the <br>
+                southern bank of the Vaigai River in the<br>
+                 temple city of Madurai, Tamil Nadu, India. 
+            </p>
+        
+        </div>
+
+        <div id="g16">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRCI5o6ZRtLXGIU5sxrMYYS5UFpattJKNHMA&usqp=CAU" height="300px" width="300px">
+            <h3 id="g16h"  style="margin-top:-260px;margin-left:100px;color:gold">Amaravathi City</h3><br>
+            <p id="g16p"  style="text-align:justify;line-height:22px;margin-top:-20px;margin-left:10px;">
+                Amaravati was a seat of Buddhism prior <br>to the
+                 rise of Satavahanas, and a stupa and <br>
+                 monastery were built there during the <br>
+                 reign of Emperor Ashoka under Mauryan <br>
+                 Empire
+            </p>
+        
+        </div>
+       
+        
+    </div><br>
+
+    <span id="rt">
+        <b>R</b><b>E</b><b>V</b><b>I</b><b>E</b><b>W</b><b>S</b>
+    </span><br><br>
+
+
+    <div id="review">
+        <div id="r1">
+            <img src="C:\Users\RAMESH THONANGI\Pictures\SAVE_20230610_175200.jpg"><br>
+            <span style="margin-top:125px;margin-left:-90px;color:rgba(0, 0, 0, 0.829)">Gowri</span>
+            <p style="line-height:20px;margin-left:10px;margin-top:-10px;">
+                Gowri studying B.TECH second year in RGUKT Nuzvidu.
+                In this project Bhoomi Yaatra ,he played a role in the domain of full stack development.
+                Project Bhoomi Yaatra is a Travel And Tourism Management Web.
+                Project Bhoomi Yaatra is a mini web but Looking great and creating some awareness in the people
+                to explore the world..
+            </p><br>
+            <i class="fa-solid fa-star" style="margin-left:50px"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+
+
+
+
+        </div>
+
+        <div id="r2">
+            <img src="C:\Users\RAMESH THONANGI\Pictures\1686402469522.jpg">
+            <br>
+            <span style="margin-top:125px;margin-left:-90px;color:rgba(0, 0, 0, 0.829)">Prasanna</span>
+            <p style="line-height:20px;margin-left:10px;margin-top:-10px;">
+                Prasanna studying B.TECH second year in RGUKT Nuzvidu.
+                In this project Bhoomi Yaatra ,he played a role in the domain of full stack development.
+                Project Bhoomi Yaatra is a Travel And Tourism Management Web.
+                Project Bhoomi Yaatra is a mini web but Looking great and creating some awareness in the people
+                to explore the world..
+            </p><br>
+            <i class="fa-solid fa-star" style="margin-left:50px;"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+
+        </div>
+
+        <div id="r3">
+            <img src="C:\Users\RAMESH THONANGI\Pictures\SAVE_20230610_174950.jpg">
+            <br>
+            <span style="margin-top:125px;margin-left:-90px;color:rgba(0, 0, 0, 0.829)">Triveny</span>
+            <p style="line-height:20px;margin-left:10px;margin-top:-10px;">
+                Triveny studying B.TECH second year in RGUKT Nuzvidu.
+                In this project Bhoomi Yaatra ,he played a role in the domain of full stack development.
+                Project Bhoomi Yaatra is a Travel And Tourism Management Web.
+                Project Bhoomi Yaatra is a mini web but Looking great and creating some awareness in the people
+                to explore the world..
+            </p><br>
+            <i class="fa-solid fa-star" style="margin-left:50px;"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            
+        </div>
+
+        <div id="r4">
+            <img src="C:\Users\RAMESH THONANGI\Pictures\1686401214527.jpg">
+            <br>
+            <span style="margin-top:125px;margin-left:-90px;color:rgba(0, 0, 0, 0.829)">Ramesh</span>
+            <p style="line-height:20px;margin-left:10px;margin-top:-10px;">
+                Ramesh thonangi studying B.TECH second year in RGUKT Nuzvidu.
+                In this project Bhoomi Yaatra ,he played a role in the domain of full stack development.
+                Project Bhoomi Yaatra is a Travel And Tourism Management Web.
+                Project Bhoomi Yaatra is a mini web but Looking great and creating some awareness in the people
+                to explore the world..
+            </p><br>
+            <i class="fa-solid fa-star" style="margin-left:50px;"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            
+        </div>
+
+        <div id="r5">
+            <img src="C:\Users\RAMESH THONANGI\Pictures\SAVE_20230610_174936 (2).jpg">
+            <br>
+            <span style="margin-top:125px;margin-left:-90px;color:rgba(0, 0, 0, 0.829)">Vemesh</span>
+            <p style="line-height:20px;margin-left:10px;margin-top:-10px;">
+                Vemesh studying B.TECH second year in RGUKT Nuzvidu.
+                In this project Bhoomi Yaatra ,he played a role in the domain of full stack development.
+                Project Bhoomi Yaatra is a Travel And Tourism Management Web.
+                Project Bhoomi Yaatra is a mini web but Looking great and creating some awareness in the people
+                to explore the world..
+            </p><br>
+            <i class="fa-solid fa-star" style="margin-left:50px;"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            
+        </div>
+
+    </div><br>
+
+    <span id="ct">
+        <b>C</b><b>O</b><b>N</b><b>T</b><b>A</b><b>C</b><b>T</b>
+    </span><br><br>
+
+
+
+    <div id="contact">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREpIT30JurNd96cT_Eh2ppjj5pyBUU_dB9oH6Ug3if1HiNicXqnF6rvULE-8hM4orGwY8&usqp=CAU" height="420px" width="600px"
+        style="margin-top:50px;margin-left:20px;">
+        
+
+        <div id="cform">
+            <form action="file:///C:/Users/RAMESH%20THONANGI/Desktop/HTML_WORKSPACE/contact_thanks_form.html" method="post" target="blank">
+            <input type="text" required="required" placeholder="name" style="margin-left:20px;padding:5px;margin-top:50px;width:250px;font-family:monospace;letter-spacing:1px;border:0.1px solid rgba(0, 0, 0, 0.384)">
+            <input type="email" required="required" placeholder="email" style="margin-left:20px;padding:5px;margin-top:50px;width:250px;font-family:monospace;letter-spacing:1px;border:0.1px solid rgba(0, 0, 0, 0.384)"><br>
+
+            <input type="tel" required="required" maxlength="11" placeholder="number" style="margin-left:20px;padding:5px;margin-top:20px;width:250px;font-family:monospace;letter-spacing:1px;border:0.1px solid rgba(0, 0, 0, 0.384)">
+            <input type="text" placeholder="subject" style="margin-left:20px;padding:5px;margin-top:20px;width:250px;font-family:monospace;letter-spacing:1px;border:0.1px solid rgba(0, 0, 0, 0.384)"><br>
+
+            <input  type="text" required="required" style="margin-left:20px;margin-top:25px;width:550px;height:110px;font-family:monospace;letter-spacing:1px;border:0.1px solid rgba(0, 0, 0, 0.384)" placeholder="message"><br>
+
+            <button id="cbut" onclick="#" style="margin-top:30px;margin-left:20px;padding:8px;width:140px;font-family:monospace;letter-spacing:1px;">Send Message</button>
+
+            
+
+
+        </form>
+
+        </div>
+
+    </div>
+
+    <footer id="foot">
+        <div id="ql">
+            <span>Quick Links</span>
+            <ul>
+                <li><i class="fa-solid fa-angle-right" style="font-size:10px;color:violet"></i> <a href="#">Home</a></li>
+                <li><i class="fa-solid fa-angle-right" style="font-size:10px;color:violet"></i> <a href="#">Book</a></li>
+                <li><i class="fa-solid fa-angle-right" style="font-size:10px;color:violet"></i> <a href="#">Services</a></li>
+                <li><i class="fa-solid fa-angle-right" style="font-size:10px;color:violet"></i> <a href="#">Packages</a></li>
+                <li><i class="fa-solid fa-angle-right" style="font-size:10px;color:violet"></i> <a href="#">Gallery</a></li>
+                <li><i class="fa-solid fa-angle-right" style="font-size:10px;color:violet"></i> <a href="#">Contact</a></li>
+            </ul>
+            
+        
+
+        </div>
+
+        <div id="el">
+
+            <span>Extra Links</span>
+            <ul>
+                <li><i class="fa-solid fa-angle-right" style="font-size:10px;color:violet"></i> <a href="#">Need Help?</a></li>
+                <li><i class="fa-solid fa-angle-right" style="font-size:10px;color:violet"></i> <a href="#">About Us</a></li>
+                <li><i class="fa-solid fa-angle-right" style="font-size:10px;color:violet"></i> <a href="#">Privacy Policy</a></li>
+                <li><i class="fa-solid fa-angle-right" style="font-size:10px;color:violet"></i> <a href="#">Terms Of Use</a></li>
+                <li><i class="fa-solid fa-angle-right" style="font-size:10px;color:violet"></i> <a href="#">Others</a></li>
+                
+            </ul>
+            
+
+        </div>
+
+        <div id="ci">
+            <span>Contact Info</span>
+            <ul>
+                <li><i class="fa-solid fa-phone" style="font-size:12px;color:violet"></i> <a href="#">8520041207</a></li>
+                <li><i class="fa-solid fa-phone" style="font-size:12px;color:violet"></i> <a href="#">8186945403</a></li>
+                <li><i class="fa-solid fa-envelope" style="font-size:12px;color:violet"></i> <a href="#">Bhooiyaatra@gmail.com</a></li>
+                <li><i class="fa-solid fa-location-dot" style="font-size:12px;color:violet"></i> <a href="#">Nuzvid-535183</a></li>
+                
+            </ul>
+            
+
+        </div>
+
+        <div id="sm">
+
+            <span>Social Media</span>
+            <ul>
+                <li><i class="fa-brands fa-facebook" style="color:rgba(0, 0, 255, 0.808)"></i> <a href="#">Facebook</a></li>
+                <li><i class="fa-brands fa-twitter" style="color:skyblue"></i> <a href="#">Twitter</a></li>
+                <li><i class="fa-brands fa-instagram" style="color:orangered"></i> <a href="#">Instagram</a></li>
+                <li><i class="fa-brands fa-linkedin" style="color:blue"></i> <a href="#">Linkedin</a></li>
+                <li><i class="fa-brands fa-whatsapp" style="color:green"></i> <a href="#">Whatsapp</a></li>
+                
+            </ul>
+            
+
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
